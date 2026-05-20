@@ -1,4 +1,9 @@
 package com.deploy.praktikum11.repository;
 
-public interface ProfileRepository {
+import com.deploy.praktikum11.model.Profile;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProfileRepository extends JpaRepository<Profile, String> {
 }
